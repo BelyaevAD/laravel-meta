@@ -1,0 +1,48 @@
+{
+    "name": "belyaevad/laravel-meta",
+    "description": "Model meta",
+    "keywords": [
+        "meta-model-table",
+        "meta-table",
+        "laravel-meta"
+    ],
+    "homepage": "https://github.com/belyaevad/laravel-meta",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Belyaev Alexander",
+            "email": "info@6wd.ru",
+            "homepage": "https://6wd.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "BelyaevAD\\Meta\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BelyaevAD\\Meta\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BelyaevAD\\Meta\\MetaServiceProvider"
+            ]
+        }
+    }
+}
