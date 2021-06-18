@@ -100,7 +100,7 @@ trait Metable
      */
     public function addOrUpdateMeta($key, $value)
     {
-        return $this->updateOrCreate(
+        return $this->meta()->updateOrCreate(
             ['key' => $key],
             ['value' => $value]
         );
